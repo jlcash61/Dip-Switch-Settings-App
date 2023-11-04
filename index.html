@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dip Switch Settings</title>
+    <style>
+        .line {
+            border-top: 1px solid #000;
+            margin-top: 8px;
+        }
+
+        .numbers {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dip Switch Settings Calculator</h1>
+
+    <label for="system">Select System:</label>
+    <select id="systemSelect">
+        <option value="system1">System 1</option>
+        <option value="system2">System 2</option>
+        <option value="system3">System 3</option>
+        <!-- Add more systems here -->
+    </select>
+
+    <label for="address">Enter Address:</label>
+    <input type="text" id="addressInput" />
+    <button onclick="calculateDipSwitch()">Calculate</button>
+
+    <div class="line"></div> <!-- Empty line -->
+
+    <div class="numbers">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+    </div>
+
+    <div class="line"></div> <!-- Horizontal line -->
+
+    <div id="result">
+        Dip Switch Settings: <span id="sw1">SW1</span> <span id="sw2">SW2</span> <span id="sw3">SW3</span> <span id="sw4">SW4</span> <!-- Add more placeholders -->
+    </div>
+
+    <script src="myscript.js"></script>
+</body>
+</html>
